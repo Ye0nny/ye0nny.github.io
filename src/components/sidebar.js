@@ -11,5 +11,4 @@ const Sidebar = ({ header }) => {
     </div>
   );
 };
-
 export default Sidebar;

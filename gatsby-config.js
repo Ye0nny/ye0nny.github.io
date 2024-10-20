@@ -1,15 +1,15 @@
 module.exports = {
-  pathPrefix: "/leonids",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Leonids`,
+    title: `Seyeon Jeong`,
     author: {
-      name: `@ry_zou`,
+      name: `Seyeon Jeong`,
       summary: `web dev`,
     },
     description: `A simple, fixed sidebar two columns Gatsby.js blog starter.`,
-    siteUrl: `https://renyuanz.github.io/leonids`,
+    siteUrl: `https://ye0nny.github.io/`,
     social: {
-      twitter: `ry_zou`,
+      twitter: ``,
     },
     defaultImage: "images/bg.jpeg",
   },
@@ -26,6 +26,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/about`,
+        name: `about`,
       },
     },
     {
@@ -62,13 +69,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryz`,
-        short_name: `Ryz`,
-        start_url: `/`,
+        name: `syj`,
+        short_name: `syj`,
+        start_url: `/about/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/sun.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
